@@ -9,9 +9,11 @@ public class JohnMovement : MonoBehaviour
     private Animator Animator;
     private float Horizontal;
     private bool Grounded;
+    public GameObject BulletPrefab;
 
     public float JumpForce;
     public float Speed;
+    private float LastShoot;
 
     // Start is called before the first frame update
     void Start()
@@ -43,10 +45,31 @@ public class JohnMovement : MonoBehaviour
         }
         else Grounded = false;
 
-        if(Input.GetKeyDown(KeyCode.W) && Grounded)
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Grounded)
         {
             Jump();
         }
+
+        if(Input.GetKeyDown(KeyCode.Space))//&& Time.time > LastShoot + 0.25f
+        {
+            Shoot();
+            //LastShoot = Time.time; //Esto es para rgular la velocidad entre cada disparo
+        }
+    }
+
+    private void Jump()
+    {
+        Rigidbody2D.AddForce(Vector2.up * JumpForce); //El .up signofica que el eje "x=0" y "y=1"
+    }
+
+    private void Shoot()
+    {
+        Vector3 direction;
+        if(transform.localScale.x == 1.0f) direction = Vector2.right;
+        else direction = Vector2.left;
+
+        GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.1f, Quaternion.identity); //Esta funcion agarra un prefab y lo duplica en algun lugar del mundo
+        bullet.GetComponent<BulletScript>().SetDirection(direction);
     }
 
     private void FixedUpdate()  //FixedUpdate se usa siempre que trabajemos con fisicas ya que se tienen que actualizar con mucha frecuencia
@@ -55,10 +78,5 @@ public class JohnMovement : MonoBehaviour
         Rigidbody2D.velocity = new Vector2(Horizontal * Speed, Rigidbody2D.velocity.y);
     }
 
-
-     private void Jump()
-    {
-        Rigidbody2D.AddForce(Vector2.up * JumpForce); //El .up signofica que el eje "x=0" y "y=1"
-    }
 
 }
