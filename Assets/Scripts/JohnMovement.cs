@@ -29,17 +29,17 @@ public class JohnMovement : MonoBehaviour
 
         if(Horizontal < 0.0f) //Si va a la izquierda
         {
-            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f); //Se pone el eje "y" en negativo y se gira el personaje
+            transform.localScale = new Vector3(-4.0f, 4.0f, 4.0f); //Se pone el eje "y" en negativo y se gira el personaje
         }
         else if(Horizontal > 0.0f) //Si va a la derecha
         {
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
         }
 
         Animator.SetBool("running", Horizontal != 0.0f); //Si horizontal =! 0 es true, si es != 0 es que nos estamos moviendo 
 
-        Debug.DrawRay(transform.position, Vector3.down * 0.1f, Color.red);
-        if(Physics2D.Raycast(transform.position, Vector3.down, 0.1f))
+        //Debug.DrawRay(transform.position, Vector3.down * 0.1f, Color.red);
+        if(Physics2D.Raycast(transform.position, Vector3.down, 0.4f))
         {
             Grounded = true;
         }
@@ -50,11 +50,11 @@ public class JohnMovement : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))//&& Time.time > LastShoot + 0.25f
-        {
-            Shoot();
-            //LastShoot = Time.time; //Esto es para rgular la velocidad entre cada disparo
-        }
+        // if(Input.GetKeyDown(KeyCode.Space))//&& Time.time > LastShoot + 0.25f
+        // {
+        //     Shoot();
+        //     //LastShoot = Time.time; //Esto es para rgular la velocidad entre cada disparo
+        // }
     }
 
     private void Jump()
@@ -62,15 +62,15 @@ public class JohnMovement : MonoBehaviour
         Rigidbody2D.AddForce(Vector2.up * JumpForce); //El .up signofica que el eje "x=0" y "y=1"
     }
 
-    private void Shoot()
-    {
-        Vector3 direction;
-        if(transform.localScale.x == 1.0f) direction = Vector2.right;
-        else direction = Vector2.left;
+    // private void Shoot()
+    // {
+    //     Vector3 direction;
+    //     if(transform.localScale.x == 4.0f) direction = Vector2.right;
+    //     else direction = Vector2.left;
 
-        GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.1f, Quaternion.identity); //Esta funcion agarra un prefab y lo duplica en algun lugar del mundo
-        bullet.GetComponent<BulletScript>().SetDirection(direction);
-    }
+    //     GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.1f, Quaternion.identity); //Esta funcion agarra un prefab y lo duplica en algun lugar del mundo
+    //     bullet.GetComponent<BulletScript>().SetDirection(direction);
+    // }
 
     private void FixedUpdate()  //FixedUpdate se usa siempre que trabajemos con fisicas ya que se tienen que actualizar con mucha frecuencia
     {

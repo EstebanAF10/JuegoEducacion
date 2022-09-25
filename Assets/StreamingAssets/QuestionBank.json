@@ -1,0 +1,147 @@
+[
+  {
+    "nombreDificultad": " Super facil",
+    "preguntas": [
+      {
+        "enunciado": "Cual es la formula quimica del agua",
+        "respuestas": [
+          { "texto": "H2O" },
+          { "texto": "CH2O" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Cuantos planetas tiene el sistema solar",
+        "respuestas": [
+          { "texto": "9" },
+          { "texto": "8" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Cual es el planeta mas alejado del Sol",
+        "respuestas": [
+          { "texto": "Saturno" },
+          { "texto": "Neptuno" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Facil",
+    "preguntas": [
+      {
+        "enunciado": "Que organo del cuerpo humano consume mas energia",
+        "respuestas": [
+          { "texto": "El cerebro" },
+          { "texto": "El corazon" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Son los humanos carnívoros, omnívoros o herbívoros",
+        "respuestas": [
+          { "texto": "Carnivoros" },
+          { "texto": "Omnivoros" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Cual es el unico satelite natural de la Tierra",
+        "respuestas": [
+          { "texto": "Sol" },
+          { "texto": "La luna" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Medio",
+    "preguntas": [
+      {
+        "enunciado": "Cual es el planeta mas cercano al Sol",
+        "respuestas": [
+          { "texto": "Mercurio" },
+          { "texto": "Saturno" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Un electrón lleva una carga positiva. ¿Verdadero o falso?",
+        "respuestas": [
+          { "texto": "Falso" },
+          { "texto": "Verdadero" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Cual es el primer elemento de la tabla periodica",
+        "respuestas": [
+          { "texto": "Plomo" },
+          { "texto": "Hidrogeno" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Dificil",
+    "preguntas": [
+      {
+        "enunciado": "Cuantos elementos componen la tabla periodica",
+        "respuestas": [
+          { "texto": "120" },
+          { "texto": "118" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Cual es el numero atomico del Carbono",
+        "respuestas": [
+          { "texto": "3" },
+          { "texto": "6" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Que significa ADN",
+        "respuestas": [
+          { "texto": "acido desoxirribonucleico" },
+          { "texto": "acido de neutrones" }
+        ],
+        "respuestaCorrecta": 0
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Super dificil",
+    "preguntas": [
+      {
+        "enunciado": "Cual es el simbolo quimico del oro",
+        "respuestas": [
+          { "texto": "Au" },
+          { "texto": "Br" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Quien invento la tabla periodica",
+        "respuestas": [
+          { "texto": "Franklin Chan Dias" },
+          { "texto": "Dmitri Mendeleev" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Que hormona ayuda a estabilizar el nivel de azucar en la sangre",
+        "respuestas": [
+          { "texto": "Insulina" },
+          { "texto": "Aldosterona" }
+        ],
+        "respuestaCorrecta": 0
+      }
+    ]
+  }
+]
