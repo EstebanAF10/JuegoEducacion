@@ -40,7 +40,7 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "Son los humanos carnívoros, omnívoros o herbívoros",
+        "enunciado": "Son los humanos carnívoros u omnívoros",
         "respuestas": [
           { "texto": "Carnivoros" },
           { "texto": "Omnivoros" }
