@@ -6,7 +6,7 @@ using UnityEngine;
 public class Pregunta
 {
   public string enunciado;
-//   public Respuesta[] respuestas;
-//   public int respuestaCorrecta;
+  public Respuesta[] respuestas;
+  public int respuestaCorrecta;
 }
 
