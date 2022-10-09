@@ -10,9 +10,10 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
-    public int level = 0;
+    public int level;
 
-    // private bool selectingAnswer = false;
+    public bool isFinal;
+
     private bool seleccionandoRespuesta = false;
     private int respuestaSeleccionada;
 
@@ -31,15 +32,12 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI enunciado;
     public TextMeshProUGUI[] respuestas;
     public Pregunta preguntaActual;
-    //public PanelComplementario panelComplementario;
-    //public Button[] btnRespuesta;
-    // Seccion de preguntas
 
     
     // Start is called before the first frame update
     void Start()
     {
-        level = 0; //Nivel del juego
+        //level = 0; //Nivel del juego
         seleccionandoRespuesta = false;
 
         cargarBancoPreguntas();
@@ -58,21 +56,15 @@ public class GameController : MonoBehaviour
             Debug.Log("Seleccionando respuesta A");
             respuestaSeleccionada = 0;
             seleccionandoRespuesta = true;
-        } else {
-            seleccionandoRespuesta = false;
-        }
-
-    if (playerCollider.IsTouching(respuestaBCollider))
+        } else if(playerCollider.IsTouching(respuestaBCollider))
         {
             Debug.Log("Seleccionando respuesta B");
             respuestaSeleccionada = 1;
             seleccionandoRespuesta = true;
-        }   
-         else {
-            seleccionandoRespuesta = false;
-        } 
+        }
 
-    if(seleccionandoRespuesta){ //Esto solo es de prueba, evaluarPregunta se tiene que hacer solo despues de que termine el timer. 
+
+    if(seleccionandoRespuesta){ 
         evaluarPregunta(respuestaSeleccionada);
     }
    }
@@ -106,30 +98,17 @@ public class GameController : MonoBehaviour
         if (respuestaSeleccionada == preguntaActual.respuestaCorrecta) 
         {
             Debug.Log("Has pasado de nivel");
-            // level++;
-            if (level == bancoPreguntas.Length)
-            {
-                Debug.Log("Has Ganado");
-                //SceneManager.LoadScene("Gane");
+            if(isFinal){
+                SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
+                Debug.Log("HAS GANADO EL JUEGO!");
+            }else{
+                SceneManager.LoadScene("Nivel" + (level + 1));
             }
-            // else
-            // {
-            //     try
-            //     {
-            //         panelComplementario.desplegar();
-            //     }
-            //     catch (System.Exception ex)
-            //     {
-            //         Debug
-            //             .Log("Olvidaste configurar el panel complementario: " +
-            //             ex.Message);
-            //     }
-            // }
         }
         else
         {
             Debug.Log("Respuesta Incorrecta");
-            //SceneManager.LoadScene("Perdida");
+            SceneManager.LoadScene("Perdida");
         }
     }
 

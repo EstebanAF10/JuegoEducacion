@@ -1,9 +1,9 @@
 [
   {
-    "nombreDificultad": " Super facil",
+    "nombreDificultad": "Nivel 0",
     "preguntas": [
       {
-        "enunciado": "Cual es la formula quimica del agua",
+        "enunciado": "¿Cuál es la fórmula química del agua?",
         "respuestas": [
           { "texto": "H2O" },
           { "texto": "CH2O" }
@@ -11,7 +11,7 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "Cuantos planetas tiene el sistema solar",
+        "enunciado": "¿Cuántos planetas tiene el sistema solar?",
         "respuestas": [
           { "texto": "9" },
           { "texto": "8" }
@@ -19,7 +19,7 @@
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "Cual es el planeta mas alejado del Sol",
+        "enunciado": "¿Cuál es el planeta más alejado del Sol?",
         "respuestas": [
           { "texto": "Saturno" },
           { "texto": "Neptuno" }
@@ -29,26 +29,26 @@
     ]
   },
   {
-    "nombreDificultad": "Facil",
+    "nombreDificultad": "Nivel 1",
     "preguntas": [
       {
-        "enunciado": "Que organo del cuerpo humano consume mas energia",
+        "enunciado": "¿Qué órgano del cuerpo humano consume más energía?",
         "respuestas": [
           { "texto": "El cerebro" },
-          { "texto": "El corazon" }
+          { "texto": "El corazón" }
         ],
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "Son los humanos carnívoros u omnívoros",
+        "enunciado": "¿Son los humanos carnívoros u omnívoros?",
         "respuestas": [
-          { "texto": "Carnivoros" },
-          { "texto": "Omnivoros" }
+          { "texto": "Carnívoros" },
+          { "texto": "Omnívoros" }
         ],
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "Cual es el unico satelite natural de la Tierra",
+        "enunciado": "¿Cual es el único satélite natural de la Tierra?",
         "respuestas": [
           { "texto": "Sol" },
           { "texto": "La luna" }
@@ -58,10 +58,10 @@
     ]
   },
   {
-    "nombreDificultad": "Medio",
+    "nombreDificultad": "Nivel 2",
     "preguntas": [
       {
-        "enunciado": "Cual es el planeta mas cercano al Sol",
+        "enunciado": "¿Cuál es el planeta más cercano al Sol?",
         "respuestas": [
           { "texto": "Mercurio" },
           { "texto": "Saturno" }
@@ -77,20 +77,20 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "Cual es el primer elemento de la tabla periodica",
+        "enunciado": "¿Cuál es el primer elemento de la tabla periódica?",
         "respuestas": [
           { "texto": "Plomo" },
-          { "texto": "Hidrogeno" }
+          { "texto": "Hidrógeno" }
         ],
         "respuestaCorrecta": 1
       }
     ]
   },
   {
-    "nombreDificultad": "Dificil",
+    "nombreDificultad": "Nivel 3",
     "preguntas": [
       {
-        "enunciado": "Cuantos elementos componen la tabla periodica",
+        "enunciado": "¿Cuántos elementos componen la tabla periódica?",
         "respuestas": [
           { "texto": "120" },
           { "texto": "118" }
@@ -98,7 +98,7 @@
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "Cual es el numero atomico del Carbono",
+        "enunciado": "¿Cuál es el número atómico del Carbono?",
         "respuestas": [
           { "texto": "3" },
           { "texto": "6" }
@@ -106,7 +106,7 @@
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "Que significa ADN",
+        "enunciado": "¿Qué significa ADN?",
         "respuestas": [
           { "texto": "acido desoxirribonucleico" },
           { "texto": "acido de neutrones" }
@@ -116,10 +116,10 @@
     ]
   },
   {
-    "nombreDificultad": "Super dificil",
+    "nombreDificultad": "Nivel 4",
     "preguntas": [
       {
-        "enunciado": "Cual es el simbolo quimico del oro",
+        "enunciado": "¿Cuál es el símbolo químico del oro?",
         "respuestas": [
           { "texto": "Au" },
           { "texto": "Br" }
@@ -127,15 +127,15 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "Quien invento la tabla periodica",
+        "enunciado": "¿Quién inventó la tabla periódica?",
         "respuestas": [
-          { "texto": "Franklin Chan Dias" },
+          { "texto": "Nicolaus Copernicus" },
           { "texto": "Dmitri Mendeleev" }
         ],
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "Que hormona ayuda a estabilizar el nivel de azucar en la sangre",
+        "enunciado": "¿Qué hormona ayuda a estabilizar el nivel de azúcar en la sangre?",
         "respuestas": [
           { "texto": "Insulina" },
           { "texto": "Aldosterona" }
