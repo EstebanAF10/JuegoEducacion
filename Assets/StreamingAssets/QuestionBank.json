@@ -106,10 +106,10 @@
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "¿Qué significa ADN?",
+        "enunciado": "Coordina los movimientos y postura del cuerpo",
         "respuestas": [
-          { "texto": "acido desoxirribonucleico" },
-          { "texto": "acido de neutrones" }
+          { "texto": "Cerebelo" },
+          { "texto": "Medula espinal" }
         ],
         "respuestaCorrecta": 0
       }
@@ -127,10 +127,10 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "¿Quién inventó la tabla periódica?",
+        "enunciado": "¿Cual es el simbolo quimico del azufre",
         "respuestas": [
-          { "texto": "Nicolaus Copernicus" },
-          { "texto": "Dmitri Mendeleev" }
+          { "texto": "CI" },
+          { "texto": "S" }
         ],
         "respuestaCorrecta": 1
       },
@@ -141,6 +141,180 @@
           { "texto": "Aldosterona" }
         ],
         "respuestaCorrecta": 0
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 5",
+    "preguntas": [
+      {
+        "enunciado": "Tiene funcion endocrina",
+        "respuestas": [
+          { "texto": "Hipotalamo" },
+          { "texto": "Cerebro" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Es el conjunto de genes que un individuo posee",
+        "respuestas": [
+          { "texto": "Fenotipo" },
+          { "texto": "Genotipo" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "NO es un bioelemento",
+        "respuestas": [
+          { "texto": "Zinc" },
+          { "texto": "Helio " }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 6",
+    "preguntas": [
+      {
+        "enunciado": "Es la biomolecula mas abundante en los seres vivos",
+        "respuestas": [
+          { "texto": "Agua" },
+          { "texto": "Glucosa" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Contiene informacion genetica de cada ser vivo",
+        "respuestas": [
+          { "texto": "ADN" },
+          { "texto": "Proteinas" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Biomolecula formada por aminoacidos",
+        "respuestas": [
+          { "texto": "Proteinas" },
+          { "texto": "Carbohidratos" }
+        ],
+        "respuestaCorrecta": 0
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 7",
+    "preguntas": [
+      {
+        "enunciado": "Uno de los carbohidratos es un polisacarido",
+        "respuestas": [
+          { "texto": "Almidon" },
+          { "texto": "Glucosa" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Los aminoacidos se unen mediante enlaces?",
+        "respuestas": [
+          { "texto": "Covalentes" },
+          { "texto": "Peptidicos" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "¿A cual sistema afecta la enfermedad Meningitis?",
+        "respuestas": [
+          { "texto": "Endocrino" },
+          { "texto": "Nervioso" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 8",
+    "preguntas": [
+      {
+        "enunciado": "¿Cual es el simbolo quimico del Silicio",
+        "respuestas": [
+          { "texto": "Sn" },
+          { "texto": "Si" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "Es una enfermedad que afecta a la vejiga",
+        "respuestas": [
+          { "texto": "Cistitis" },
+          { "texto": "Uretritis" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Las neuronas son parte del sistema?",
+        "respuestas": [
+          { "texto": "Respiratorio" },
+          { "texto": "Nervioso" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 9",
+    "preguntas": [
+      {
+        "enunciado": "Conocido como el padre de la geometria",
+        "respuestas": [
+          { "texto": "Euclides" },
+          { "texto": "Arquimedes" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Que estudia la ficologia?",
+        "respuestas": [
+          { "texto": "Los peces" },
+          { "texto": "Las algas" }
+        ],
+        "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "¿Los objetos mas luminososo del universo conocido?",
+        "respuestas": [
+          { "texto": "Las estrellas" },
+          { "texto": "Los cuasares" }
+        ],
+        "respuestaCorrecta": 1
+      }
+    ]
+  },
+  {
+    "nombreDificultad": "Nivel 10",
+    "preguntas": [
+      {
+        "enunciado": "¿Cuantos cromosomas tiene el ser humano",
+        "respuestas": [
+          { "texto": "23 pares" },
+          { "texto": "30 pares" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Causante del virus del sida",
+        "respuestas": [
+          { "texto": "VIH" },
+          { "texto": "VHS" }
+        ],
+        "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Cual es el numero atomico del Xenon?",
+        "respuestas": [
+          { "texto": "80" },
+          { "texto": "54" }
+        ],
+        "respuestaCorrecta": 1
       }
     ]
   }
