@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: Water
+  m_Name: WaterDown
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 21300000, guid: 80b6309edc93060479d273d76891aab8, type: 3}
-  - {fileID: 21300000, guid: 6535ee67587fd9b4aa62ee904bcff7e8, type: 3}
-  - {fileID: 21300000, guid: 4c9517881657cda4ba2126f98820acd3, type: 3}
-  - {fileID: 21300000, guid: 4ccbb68ef73d36d4198acbb7352392f5, type: 3}
-  - {fileID: 21300000, guid: e823ecb556d98c043a1ba7f8873f87b3, type: 3}
+  - {fileID: 21300000, guid: 123d9aec2750e164ca6e34aba5e21c12, type: 3}
+  - {fileID: 21300000, guid: 5745cbbe40f947f4cbcfddebaff97fe1, type: 3}
+  - {fileID: 21300000, guid: c2ad532c549f34644b08d59fbbf5b035, type: 3}
+  - {fileID: 21300000, guid: bb095544e7b1b8c46ad451c31a773566, type: 3}
+  - {fileID: 21300000, guid: c61ccc7377074204eb9df8ce809c5803, type: 3}
+  - {fileID: 21300000, guid: 3b61cf1072c36154fb5d0aeb5311fd26, type: 3}
   m_MinSpeed: 5
   m_MaxSpeed: 5
   m_AnimationStartTime: 0
