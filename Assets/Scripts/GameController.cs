@@ -33,11 +33,18 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI[] respuestas;
     public Pregunta preguntaActual;
 
+    //Timer
+    public TextMeshProUGUI timerText;
+    public float timeLeft;
+    public bool timerOn = false;
+    //Timer
+
     
     // Start is called before the first frame update
     void Start()
     {
-        //level = 0; //Nivel del juego
+        timerOn = true;
+
         seleccionandoRespuesta = false;
 
         cargarBancoPreguntas();
@@ -67,6 +74,32 @@ public class GameController : MonoBehaviour
     if(seleccionandoRespuesta){ 
         evaluarPregunta(respuestaSeleccionada);
     }
+
+    if(timerOn){
+        if(timeLeft > 0)
+        {
+            timeLeft -= Time.deltaTime;
+            displayTime(timeLeft);
+        }else
+        {
+            Debug.Log("Time is up"); //Aqui se agrega la funcionalidad si se le acaba el timepo
+            timeLeft = 0;
+            timerOn = false;
+            SceneManager.LoadScene("Perdida");
+        }
+    }
+   }
+
+   public void displayTime(float currentTime){
+        // if(currentTime < 0)
+        // {
+        //     currentTime = 0;
+        // }
+
+        // currentTime += 1;
+        int minutes = (int) Mathf.FloorToInt(currentTime / 60);
+        int seconds = (int) Mathf.FloorToInt(currentTime % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
    }
 
 
