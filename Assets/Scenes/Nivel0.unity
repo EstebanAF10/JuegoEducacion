@@ -462,7 +462,7 @@ MonoBehaviour:
     respuestas: []
     respuestaCorrecta: 0
   timerText: {fileID: 114133422}
-  timeLeft: 120
+  timeLeft: 60
   timerOn: 0
 --- !u!4 &270609166
 Transform:

@@ -280,7 +280,7 @@
         "respuestaCorrecta": 1
       },
       {
-        "enunciado": "¿Los objetos mas luminososo del universo conocido?",
+        "enunciado": "¿Los objetos mas luminososos del universo conocido son?",
         "respuestas": [
           { "texto": "Las estrellas" },
           { "texto": "Los cuasares" }

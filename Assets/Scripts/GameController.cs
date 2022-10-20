@@ -37,6 +37,7 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI timerText;
     public float timeLeft;
     public bool timerOn = false;
+
     //Timer
 
     
@@ -44,6 +45,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         timerOn = true;
+        timeLeft = 30; //Tiempo de cada nivel. Se resetea cada nuevo nivel
 
         seleccionandoRespuesta = false;
 
@@ -91,12 +93,12 @@ public class GameController : MonoBehaviour
    }
 
    public void displayTime(float currentTime){
-        // if(currentTime < 0)
-        // {
-        //     currentTime = 0;
-        // }
+        if(currentTime < 0)
+        {
+            currentTime = 0;
+        }
 
-        // currentTime += 1;
+        currentTime += 1;
         int minutes = (int) Mathf.FloorToInt(currentTime / 60);
         int seconds = (int) Mathf.FloorToInt(currentTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
