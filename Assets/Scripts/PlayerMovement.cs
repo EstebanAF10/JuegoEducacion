@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
          if(xAxis < 0.0f) //Si va a la izquierda
         {
-            transform.localScale = new Vector3(-0.8f, 0.8f, 0.8f); //Se pone el eje "y" en negativo y se gira el personaje
+            transform.localScale = new Vector3(-0.6f, 0.6f, 0.6f); //Se pone el eje "y" en negativo y se gira el personaje
         }
         else if(xAxis > 0.0f) //Si va a la derecha
         {
-            transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
         }
 
         currentState = xAxis == 0 ? "Idle" : "Run"; //Si el hAxis es 0, el estado es Idle, si no, es Run
