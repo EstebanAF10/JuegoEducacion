@@ -110,6 +110,10 @@ public class GameController : MonoBehaviour
         preguntaActual = bancoPreguntas[level].preguntas[preguntaRandom];
         enunciado.text = preguntaActual.enunciado;
 
+        // int respuestaRandom = Random.Range(0, preguntaActual.respuestas.Length);
+        // respuestas[Random.Range(0,1)].text = preguntaActual.respuestas[respuestaRandom].texto;
+        //Esto sirve pero hay que arreglar el panel de las respuestas
+
         for(int i = 0; i < respuestas.Length; i++)
         {
             respuestas[i].text = preguntaActual.respuestas[i].texto;
