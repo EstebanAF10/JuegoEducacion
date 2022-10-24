@@ -105,14 +105,14 @@ public class GameController : MonoBehaviour
    }
 
 
-    public void setPregunta(){
+    public void setPregunta(){ 
         int preguntaRandom = Random.Range(0,bancoPreguntas[level].preguntas.Length);
         preguntaActual = bancoPreguntas[level].preguntas[preguntaRandom];
         enunciado.text = preguntaActual.enunciado;
 
         // int respuestaRandom = Random.Range(0, preguntaActual.respuestas.Length);
         // respuestas[Random.Range(0,1)].text = preguntaActual.respuestas[respuestaRandom].texto;
-        //Esto sirve pero hay que arreglar el panel de las respuestas
+        //Esto sirve pero hay que arreglar el panel de las respuestas nononon
 
         for(int i = 0; i < respuestas.Length; i++)
         {

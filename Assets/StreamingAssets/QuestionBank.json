@@ -11,6 +11,15 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "¿Cuál es la fórmula química del agua?",
+        "respuestas": [
+          { "texto": "CH2O" },
+          { "texto": "H2O" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+      {
         "enunciado": "¿Cuántos planetas tiene el sistema solar?",
         "respuestas": [
           { "texto": "9" },
@@ -19,13 +28,31 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "¿Cuántos planetas tiene el sistema solar?",
+        "respuestas": [
+          { "texto": "8" },
+          { "texto": "9" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "¿Cuál es el planeta más alejado del Sol?",
         "respuestas": [
           { "texto": "Saturno" },
           { "texto": "Neptuno" }
         ],
         "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "¿Cuál es el planeta más alejado del Sol?",
+        "respuestas": [
+          { "texto": "Neptuno" },
+          { "texto": "Saturno" }
+        ],
+        "respuestaCorrecta": 0
       }
+
 
     ]
   },
@@ -41,6 +68,15 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "¿Qué órgano del cuerpo humano consume más energía?",
+        "respuestas": [
+          { "texto": "El corazón" },
+          { "texto": "El cerebro" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+      {
         "enunciado": "¿Son los humanos carnívoros u omnívoros?",
         "respuestas": [
           { "texto": "Carnívoros" },
@@ -49,12 +85,29 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "¿Son los humanos carnívoros u omnívoros?",
+        "respuestas": [
+          { "texto": "Omnívoros" },
+          { "texto": "Carnívoros" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "¿Cual es el único satélite natural de la Tierra?",
         "respuestas": [
           { "texto": "Sol" },
           { "texto": "La luna" }
         ],
         "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "¿Cual es el único satélite natural de la Tierra?",
+        "respuestas": [
+          { "texto": "La luna"},
+          { "texto": "Sol" }
+        ],
+        "respuestaCorrecta": 0
       }
     ]
   },
@@ -70,6 +123,15 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "¿Cuál es el planeta más cercano al Sol?",
+        "respuestas": [
+          { "texto": "Saturno" },
+          { "texto": "Mercurio" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+      {
         "enunciado": "Un electrón lleva una carga positiva. ¿Verdadero o falso?",
         "respuestas": [
           { "texto": "Falso" },
@@ -78,12 +140,29 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "Un electrón lleva una carga positiva. ¿Verdadero o falso?",
+        "respuestas": [
+          { "texto": "Verdadero" },
+          { "texto": "Falso" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+      {
         "enunciado": "¿Cuál es el primer elemento de la tabla periódica?",
         "respuestas": [
           { "texto": "Plomo" },
           { "texto": "Hidrógeno" }
         ],
         "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "¿Cuál es el primer elemento de la tabla periódica?",
+        "respuestas": [
+          { "texto": "Hidrógeno"},
+          { "texto": "Plomo" }
+        ],
+        "respuestaCorrecta": 0
       }
     ]
   },
@@ -99,6 +178,15 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "¿Cuántos elementos componen la tabla periódica?",
+        "respuestas": [
+          { "texto": "118" },
+          { "texto": "120" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "¿Cuál es el número atómico del Carbono?",
         "respuestas": [
           { "texto": "3" },
@@ -107,12 +195,29 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "¿Cuál es el número atómico del Carbono?",
+        "respuestas": [
+          { "texto": "6" },
+          { "texto": "3" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "Coordina los movimientos y postura del cuerpo",
         "respuestas": [
           { "texto": "Cerebelo" },
           { "texto": "Medula espinal" }
         ],
         "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Coordina los movimientos y postura del cuerpo",
+        "respuestas": [
+          { "texto": "Medula espinal" },
+          { "texto": "Cerebelo" }
+        ],
+        "respuestaCorrecta": 1
       }
     ]
   },
@@ -128,7 +233,16 @@
         "respuestaCorrecta": 0
       },
       {
-        "enunciado": "¿Cual es el simbolo quimico del azufre",
+        "enunciado": "¿Cuál es el símbolo químico del oro?",
+        "respuestas": [
+          { "texto": "Br" },
+          { "texto": "Au" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+      {
+        "enunciado": "¿Cuál es el símbolo químico del azufre?",
         "respuestas": [
           { "texto": "CI" },
           { "texto": "S" }
@@ -136,12 +250,29 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "¿Cuál es el símbolo químico del azufre?",
+        "respuestas": [
+          { "texto": "S" },
+          { "texto": "CI" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "¿Qué hormona ayuda a estabilizar el nivel de azúcar en la sangre?",
         "respuestas": [
           { "texto": "Insulina" },
           { "texto": "Aldosterona" }
         ],
         "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "¿Qué hormona ayuda a estabilizar el nivel de azúcar en la sangre?",
+        "respuestas": [
+          { "texto": "Aldosterona" },
+          { "texto": "Insulina" }
+        ],
+        "respuestaCorrecta": 1
       }
     ]
   },
@@ -149,13 +280,22 @@
     "nombreDificultad": "Nivel 5",
     "preguntas": [
       {
-        "enunciado": "Tiene funcion endocrina",
+        "enunciado": "Tiene función endocrina",
         "respuestas": [
-          { "texto": "Hipotalamo" },
+          { "texto": "Hipotálamo" },
           { "texto": "Cerebro" }
         ],
         "respuestaCorrecta": 0
       },
+      {
+        "enunciado": "Tiene función endocrina",
+        "respuestas": [
+          { "texto": "Cerebro" },
+          { "texto": "Hipotálamo" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
       {
         "enunciado": "Es el conjunto de genes que un individuo posee",
         "respuestas": [
@@ -165,15 +305,33 @@
         "respuestaCorrecta": 1
       },
       {
+        "enunciado": "Es el conjunto de genes que un individuo posee",
+        "respuestas": [
+          { "texto": "Genotipo" },
+          { "texto": "Fenotipo" }
+        ],
+        "respuestaCorrecta": 0
+      },
+
+      {
         "enunciado": "NO es un bioelemento",
         "respuestas": [
           { "texto": "Zinc" },
           { "texto": "Helio " }
         ],
         "respuestaCorrecta": 1
+      },
+      {
+        "enunciado": "NO es un bioelemento",
+        "respuestas": [
+          { "texto": "Helio " },
+          { "texto": "Zinc" }
+        ],
+        "respuestaCorrecta": 0
       }
     ]
   },
+  
   {
     "nombreDificultad": "Nivel 6",
     "preguntas": [
