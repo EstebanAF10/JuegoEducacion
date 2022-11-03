@@ -90,6 +90,7 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("Perdida");
         }
     }
+
    }
 
    public void displayTime(float currentTime){

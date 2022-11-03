@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Spine.Unity;
 using UnityEngine;
 using static UnityEngine.Physics;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,9 +15,10 @@ public class PlayerMovement : MonoBehaviour
     private SkeletonAnimation skeletonAnimation;
     private string previousState, currentState;
     public GameObject[] waterSurface;
-    // private bool isFloating = false;
+    public GameObject[] lavaSurface;
     private float xAxis;
     private float yAxis;
+    private bool climbingAllowed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -56,9 +58,13 @@ public class PlayerMovement : MonoBehaviour
             Grounded = false;
             }
 
-        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Grounded)
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
         {
             Rigidbody2D.AddForce(Vector2.up * JumpForce); //El .up signofica que el eje "x=0" y "y=1"
+        }
+
+        if(climbingAllowed){
+            yAxis *= walkSpeed;
         }
         
         //-----Eje Y------
@@ -73,9 +79,6 @@ public class PlayerMovement : MonoBehaviour
         previousState = currentState;
         // Cambio de animaciones
         
-        // if(isFloating){
-        //     walkSpeed = 0.5f;
-        // }
 
     }
 
@@ -83,16 +86,43 @@ public class PlayerMovement : MonoBehaviour
     {
         //velocity espera un vector2 = dos elementos indican la "x" y "y" del mundo
         Rigidbody2D.velocity = new Vector2(xAxis * walkSpeed, Rigidbody2D.velocity.y);
+
+        if(climbingAllowed){
+            Rigidbody2D.isKinematic = true;
+            Rigidbody2D.velocity = new Vector2(xAxis, yAxis);
+        }else{
+            Rigidbody2D.isKinematic = false;
+            Rigidbody2D.velocity = new Vector2(xAxis * walkSpeed, Rigidbody2D.velocity.y);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-        Debug.Log("enter water");
+
+        //Water collider
         if(collider.name == "WaterSurface") walkSpeed = 0.5f;
+        //Water collider vvvvvv
+
+        //Lava collider
+        if(collider.name == "LavaSurface")
+        {
+            walkSpeed = 0.1f;
+            SceneManager.LoadScene("Perdida");
+        }
+        //Lava collider
+
+        if(collider.CompareTag("Ladder")){
+            climbingAllowed = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider) {
-        Debug.Log("exit water");
+
+        //Al salir de cualquier collider
         walkSpeed = 3f;
+
+        if(collider.CompareTag("Ladder")){
+            climbingAllowed = false;
+        }
     }
 
 

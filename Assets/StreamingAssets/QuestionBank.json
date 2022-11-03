@@ -344,6 +344,16 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "Es la biomolecula mas abundante en los seres vivos",
+        "respuestas": [
+          { "texto": "Glucosa" },
+          { "texto": "Agua" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+
+      {
         "enunciado": "Contiene informacion genetica de cada ser vivo",
         "respuestas": [
           { "texto": "ADN" },
@@ -352,12 +362,30 @@
         "respuestaCorrecta": 0
       },
       {
+        "enunciado": "Contiene informacion genetica de cada ser vivo",
+        "respuestas": [
+          { "texto": "Proteinas" },
+          { "texto": "ADN" }
+        ],
+        "respuestaCorrecta": 1
+      },
+
+
+      {
         "enunciado": "Biomolecula formada por aminoacidos",
         "respuestas": [
           { "texto": "Proteinas" },
           { "texto": "Carbohidratos" }
         ],
         "respuestaCorrecta": 0
+      },
+      {
+        "enunciado": "Biomolecula formada por aminoacidos",
+        "respuestas": [
+          { "texto": "Carbohidratos" },
+          { "texto": "Proteínas" }
+        ],
+        "respuestaCorrecta": 1
       }
     ]
   },
