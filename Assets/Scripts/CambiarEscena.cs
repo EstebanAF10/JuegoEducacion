@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
 {
+
+    public Animator transition;
+
     public void CambiarEscenaClick(string sceneName){
         Debug.Log("Cambiando de escena " + sceneName);
-        SceneManager.LoadScene(sceneName);
-        //StartCoroutine(retrasoEscena(sceneName));
+        StartCoroutine(CargarEscena(sceneName));
     }
 
     public void SalirJuego(){
@@ -16,10 +18,13 @@ public class CambiarEscena : MonoBehaviour
         Application.Quit();
     }
 
-    // IEnumerator retrasoEscena(string sceneName){
-    //     yield return new WaitForSecondsRealtime(1f);
-    //     SceneManager.LoadScene(sceneName);
-    // }
+    IEnumerator CargarEscena(string sceneName){
+
+        //yield return new WaitForSecondsRealtime(2f);
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene(sceneName);
+    }
 
 
 }

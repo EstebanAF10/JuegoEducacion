@@ -135,13 +135,34 @@ public class GameController : MonoBehaviour
 
     public void evaluarPregunta(int respuestaSeleccionada)
     {
+        // if (respuestaSeleccionada == preguntaActual.respuestaCorrecta) 
+        // {
+        //     Debug.Log("Has pasado de nivel");
+        //     if(isFinal){
+        //         SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
+        //         Debug.Log("HAS GANADO EL JUEGO!");
+        //     }else{
+        //         SceneManager.LoadScene("Nivel" + (level + 1));
+        //     }
+        // }
+        // else
+        // {
+        //     Debug.Log("Respuesta Incorrecta");
+        //     SceneManager.LoadScene("Perdida");
+        // }
+        StartCoroutine(EvaluarPreguntaDelay(respuestaSeleccionada));
+    }
+
+    IEnumerator EvaluarPreguntaDelay(int respuestaSeleccionada){
         if (respuestaSeleccionada == preguntaActual.respuestaCorrecta) 
         {
             Debug.Log("Has pasado de nivel");
             if(isFinal){
+
                 SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
                 Debug.Log("HAS GANADO EL JUEGO!");
             }else{
+                yield return new WaitForSecondsRealtime(0.3f);
                 SceneManager.LoadScene("Nivel" + (level + 1));
             }
         }
