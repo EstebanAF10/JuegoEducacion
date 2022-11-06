@@ -162,7 +162,7 @@ public class GameController : MonoBehaviour
                 SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
                 Debug.Log("HAS GANADO EL JUEGO!");
             }else{
-                yield return new WaitForSecondsRealtime(0.3f);
+                yield return new WaitForSecondsRealtime(0.1f);
                 SceneManager.LoadScene("Nivel" + (level + 1));
             }
         }
