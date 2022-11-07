@@ -1,0 +1,28 @@
+{
+    "Items": [
+        {
+            "playerName": "Esteban",
+            "maxLevel": 0
+        },
+        {
+            "playerName": "Ana",
+            "maxLevel": 0
+        },
+        {
+            "playerName": "Jose",
+            "maxLevel": 0
+        },
+        {
+            "playerName": "Maritza",
+            "maxLevel": 0
+        },
+        {
+            "playerName": "Ricardo",
+            "maxLevel": 0
+        },
+        {
+            "playerName": "Hugo",
+            "maxLevel": 0
+        }
+    ]
+}

@@ -10,6 +10,9 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
+    // [SerializeField] InputHandler inputHandler;
+    //[SerializeField] string playerName;
+
     public int level;
 
     public bool isFinal;
@@ -111,10 +114,6 @@ public class GameController : MonoBehaviour
         preguntaActual = bancoPreguntas[level].preguntas[preguntaRandom];
         enunciado.text = preguntaActual.enunciado;
 
-        // int respuestaRandom = Random.Range(0, preguntaActual.respuestas.Length);
-        // respuestas[Random.Range(0,1)].text = preguntaActual.respuestas[respuestaRandom].texto;
-        //Esto sirve pero hay que arreglar el panel de las respuestas nononon
-
         for(int i = 0; i < respuestas.Length; i++)
         {
             respuestas[i].text = preguntaActual.respuestas[i].texto;
@@ -135,21 +134,6 @@ public class GameController : MonoBehaviour
 
     public void evaluarPregunta(int respuestaSeleccionada)
     {
-        // if (respuestaSeleccionada == preguntaActual.respuestaCorrecta) 
-        // {
-        //     Debug.Log("Has pasado de nivel");
-        //     if(isFinal){
-        //         SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
-        //         Debug.Log("HAS GANADO EL JUEGO!");
-        //     }else{
-        //         SceneManager.LoadScene("Nivel" + (level + 1));
-        //     }
-        // }
-        // else
-        // {
-        //     Debug.Log("Respuesta Incorrecta");
-        //     SceneManager.LoadScene("Perdida");
-        // }
         StartCoroutine(EvaluarPreguntaDelay(respuestaSeleccionada));
     }
 
@@ -159,8 +143,10 @@ public class GameController : MonoBehaviour
             Debug.Log("Has pasado de nivel");
             if(isFinal){
 
+                //inputHandler.AddHighscoreIfPossible (new InputEntry(playerName, level));
                 SceneManager.LoadScene("Gane"); //Para cargar la escena del ultimo nivel
                 Debug.Log("HAS GANADO EL JUEGO!");
+
             }else{
                 yield return new WaitForSecondsRealtime(0.1f);
                 SceneManager.LoadScene("Nivel" + (level + 1));
@@ -169,6 +155,7 @@ public class GameController : MonoBehaviour
         else
         {
             Debug.Log("Respuesta Incorrecta");
+            //inputHandler.AddHighscoreIfPossible (new InputEntry(playerName, level));
             SceneManager.LoadScene("Perdida");
         }
     }
