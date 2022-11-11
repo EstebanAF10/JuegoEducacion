@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 534732372588133614}
   - component: {fileID: 534732372588133613}
   - component: {fileID: 1335948985530956278}
+  - component: {fileID: -597004578836760749}
   m_Layer: 0
   m_Name: Shroompoline
   m_TagString: Untagged
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 534732372588133612}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b3b2e74b91d9e49fa93cd04563a3cb67, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -132,3 +133,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &-597004578836760749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534732372588133612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed43247dcfe5b47448c35fb96108829d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpforce: 10
