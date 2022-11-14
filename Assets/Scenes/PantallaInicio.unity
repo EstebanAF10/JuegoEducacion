@@ -709,6 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInput: {fileID: 1003087210}
   filename: players.json
+  maxCount: 5
 --- !u!4 &741026985
 Transform:
   m_ObjectHideFlags: 0
@@ -960,7 +961,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1366012934}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: LeerStringInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -1498,6 +1511,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1366012934}
+        m_TargetAssemblyTypeName: GuardarDatos, Assembly-CSharp
+        m_MethodName: reiniciarNiveles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284914609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,6 +1561,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284914606}
   m_CullTransparentMesh: 1
+--- !u!114 &1366012934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8933823707283514727, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+  m_PrefabInstance: {fileID: 8933823708648395105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9baa3d289ce6a294a9bd5a1241f3c337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400840799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,3 +1815,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93ef0864ac3c4fe19a31ed80fc02de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &8933823708648395105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8933823707283514722, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_Name
+      value: DatosTabla
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2201097
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514724, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514727, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: subirNivel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933823707283514727, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
+      propertyPath: derrotaVictoria
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2681dcbeaf6ee54bbe6b121ae2ebe05, type: 3}
