@@ -40,8 +40,10 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI timerText;
     public float timeLeft;
     public bool timerOn = false;
-
     //Timer
+
+    // [SerializeField] private AudioSource nextLevelSoundEffect;
+
 
     
     // Start is called before the first frame update
@@ -140,6 +142,7 @@ public class GameController : MonoBehaviour
     IEnumerator EvaluarPreguntaDelay(int respuestaSeleccionada){
         if (respuestaSeleccionada == preguntaActual.respuestaCorrecta) 
         {
+            // nextLevelSoundEffect.Play();
             Debug.Log("Has pasado de nivel");
             if(isFinal){
 
@@ -148,6 +151,7 @@ public class GameController : MonoBehaviour
                 Debug.Log("HAS GANADO EL JUEGO!");
 
             }else{
+                
                 yield return new WaitForSecondsRealtime(0.1f);
                 SceneManager.LoadScene("Nivel" + (level + 1));
             }

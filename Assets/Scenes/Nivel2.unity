@@ -2403,7 +2403,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762177318}
   m_CullTransparentMesh: 1
---- !u!1 &2011957797
+--- !u!1 &1854350761
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2411,23 +2411,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2011957800}
-  - component: {fileID: 2011957799}
-  - component: {fileID: 2011957798}
+  - component: {fileID: 1854350764}
+  - component: {fileID: 1854350763}
+  - component: {fileID: 1854350762}
   m_Layer: 0
-  m_Name: WaterSurface
+  m_Name: LavaSurface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!253 &2011957798
+--- !u!253 &1854350762
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011957797}
+  m_GameObject: {fileID: 1854350761}
   m_Enabled: 1
   m_UseColliderMask: 1
   m_ColliderMask:
@@ -2440,20 +2440,20 @@ BuoyancyEffector2D:
   m_FlowAngle: 0
   m_FlowMagnitude: 0
   m_FlowVariation: 0
---- !u!61 &2011957799
+--- !u!61 &1854350763
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011957797}
+  m_GameObject: {fileID: 1854350761}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1425791, y: -0.2565527}
+  m_Offset: {x: 0.047046483, y: -0.2565527}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2464,18 +2464,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2851582, y: 1.5131054}
+  m_Size: {x: 1.094093, y: 1.5131054}
   m_EdgeRadius: 0
---- !u!4 &2011957800
+--- !u!4 &1854350764
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011957797}
+  m_GameObject: {fileID: 1854350761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.12, y: 1.01, z: -16.947329}
-  m_LocalScale: {x: 1.4499999, y: 1, z: 1}
+  m_LocalPosition: {x: 8.5725, y: 1.0752494, z: -16.947329}
+  m_LocalScale: {x: 4.417068, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4786,7 +4786,7 @@ Tilemap:
       - {fileID: 21300000, guid: 0f6dd20986a864c4287595a53e02e552, type: 3}
       - {fileID: 21300000, guid: 21cf4f011d91d4538a77105e08e3d3fb, type: 3}
       - {fileID: 21300000, guid: 74d3b66c4f57348c690b11e6d21e8201, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -1, z: 0}
@@ -4843,7 +4843,7 @@ Tilemap:
       - {fileID: 21300000, guid: 0f6dd20986a864c4287595a53e02e552, type: 3}
       - {fileID: 21300000, guid: 21cf4f011d91d4538a77105e08e3d3fb, type: 3}
       - {fileID: 21300000, guid: 74d3b66c4f57348c690b11e6d21e8201, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 12, y: -1, z: 0}
@@ -4957,7 +4957,7 @@ Tilemap:
       - {fileID: 21300000, guid: 0f6dd20986a864c4287595a53e02e552, type: 3}
       - {fileID: 21300000, guid: 21cf4f011d91d4538a77105e08e3d3fb, type: 3}
       - {fileID: 21300000, guid: 74d3b66c4f57348c690b11e6d21e8201, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 12, y: 0, z: 0}

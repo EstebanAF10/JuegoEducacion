@@ -19,12 +19,17 @@ public class PlayerMovement : MonoBehaviour
     private float xAxis;
     private float yAxis;
     private bool climbingAllowed = false;
+    private Vector2 initialPosition;
+
+    [SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource spikeSoundEffect;
 
     // Start is called before the first frame update
     void Start()
     {
         skeletonAnimation = GetComponent<SkeletonAnimation>();
         Rigidbody2D = GetComponent<Rigidbody2D>();
+        initialPosition = transform.position;
 
     }
 
@@ -60,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
         if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && Grounded)
         {
+            jumpSoundEffect.Play();
             Rigidbody2D.AddForce(Vector2.up * JumpForce); //El .up signofica que el eje "x=0" y "y=1"
         }
 
@@ -123,6 +129,18 @@ public class PlayerMovement : MonoBehaviour
         if(collider.CompareTag("Ladder")){
             climbingAllowed = false;
         }
+    }
+
+    public void Hit(GameObject spike)
+    {
+  
+        if (spike)
+        {
+            spikeSoundEffect.Play();
+            transform.position = initialPosition;
+                
+        }
+
     }
 
 
