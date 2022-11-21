@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Perdida.unity
     guid: 51052e6f37ad542a39850b336768c6ed
+  - enabled: 1
+    path: Assets/Scenes/EasterEgg.unity
+    guid: fdcf94fc07614da4fac46688f1e7b90e
   m_configObjects: {}

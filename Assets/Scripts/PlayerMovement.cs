@@ -119,6 +119,15 @@ public class PlayerMovement : MonoBehaviour
         if(collider.CompareTag("Ladder")){
             climbingAllowed = true;
         }
+
+        if (collider.name == "PointA")
+        {
+            SceneManager.LoadScene("EasterEgg");
+        }
+        if (collider.name == "PointB")
+        {
+            SceneManager.LoadScene("Nivel4");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider) {
