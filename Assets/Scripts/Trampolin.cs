@@ -7,6 +7,8 @@ public class Trampolin : MonoBehaviour
 
     public float jumpforce = 2f;
     private Animator animator;
+    [SerializeField] private AudioSource jumpSoundEffect;
+
 
     void Start()
     {
@@ -17,6 +19,7 @@ public class Trampolin : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
+            jumpSoundEffect.Play();
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * jumpforce);
             //agregar animaci[on] aca
             animator.Play("Shroompoline");
